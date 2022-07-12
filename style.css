@@ -1,0 +1,241 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  background: #1e1a20;
+}
+
+nav {
+  text-align: center;
+  padding: 20px 10px;
+  /* border-bottom: 0.75px solid #dadce0; */
+}
+
+nav .nav-link {
+  text-decoration: none;
+  color: #e0dadd;
+  font: 20px "Lucida Console", monospace;
+  font-weight: bold;
+  padding: 50px;
+}
+
+nav .nav-link:hover {
+  color: #34cfc9;
+  transition: 0.25s;
+}
+
+.nav-underline {
+  width: 50%;
+  height: 0.1rem;
+  background: #c5d6d6;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.underline {
+  width: 5rem;
+  height: 0.2rem;
+  background: #97d8de;
+}
+
+header .introduction {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px 350px;
+}
+
+header .profile-pic {
+  border-radius: 50%;
+  height: 300px;
+}
+
+header p {
+  font: 21px Times New Roman, serif;
+  color: #bee8e8;
+  letter-spacing: 1.5px;
+}
+
+header h2 {
+  color: #bee8e8;
+  letter-spacing: 0.5px;
+}
+
+header .social-logo {
+  display: grid;
+  margin-top: 1.5rem;
+  width: 20rem;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* main */
+
+main .about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 400px;
+}
+
+main .about-text {
+  height: 500px;
+  width: 500px;
+}
+
+main .about-pic {
+  height: 400px;
+}
+
+@media screen and (max-width: 1300px) {
+  main .about {
+    padding: 1rem 0px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  main .about-text {
+    align-self: center;
+  }
+}
+
+main .education {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 400px;
+}
+
+main .education-text {
+  height: 500px;
+  width: 500px;
+}
+
+main .education-pic {
+  height: 400px;
+}
+
+@media screen and (max-width: 1300px) {
+  main .education {
+    padding: 1rem 0px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  main .education-text {
+    align-self: center;
+  }
+}
+main .education-text li {
+  font: 28px Arial, sans-serif;
+  letter-spacing: 1.5px;
+  padding: 10px 5px;
+  font-weight: bold;
+}
+
+main .education-text p {
+  font: 21px Arial, sans-serif;
+  color: #158c96;
+  font-weight: bold;
+}
+
+.skills {
+  display: flex;
+  margin: 20px 0;
+  padding: 20px 80px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+main .skills .skill-logo {
+  height: 80px;
+}
+
+.skill-name {
+  display: flex;
+  padding: 0 80px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact-box {
+  height: 500px;
+  width: 1200px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #727575;
+  padding: 40px 20px 15px 40px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+label {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+input,
+textarea {
+  height: 50px;
+  width: 450px;
+  margin-bottom: 50px;
+}
+
+main button {
+  width: 500px;
+  height: 10%;
+  padding: 15px 0;
+  border-radius: 5px;
+  outline: none;
+  backdrop-filter: blur(20px);
+  border: none;
+  background-color: #a7abab;
+}
+
+button:hover {
+  background-color: #cdd4d4;
+}
+
+button:active {
+  background-color: #50cccc;
+}
+
+footer {
+  background: #1e1a20;
+}
+
+footer p {
+  text-align: center;
+  color: #e0dadd;
+  font-weight: bold;
+}
